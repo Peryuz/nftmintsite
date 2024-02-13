@@ -1,43 +1,73 @@
-<style>
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEYRUZNODE DYMENSION ROLLAPP</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    button {
-        background: none;
-        border: none;
-        padding: 0;
-        font-family: 'Fraunces', sans-serif;
-        font-size: 24px;
-        font-weight: bold;
-        cursor: pointer;
-        color: #001f3f;
-    }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
 
-    .separator {
-        margin: 0 10px;
-    }
+        .heading {
+            font-size: 40px;
+            font-weight: bold;
+            color: #343a40;
+            margin-bottom: 30px;
+        }
 
-    .heading {
-        font-family: 'Fraunces', sans-serif;
-        font-size: 40px;
-        font-weight: bold;
-        color: #001f3f;
-        margin-bottom: 10px;
-    }
-</style>
+        .button-container {
+            margin-bottom: 20px;
+        }
 
-<div class="button-container">
-    <div class="heading">PEYRUZNODE DYMENSION ROLLAPP</div>
-    <button onclick="window.location.href='https://portal.dymension.xyz/rollapps'">Rollapp</button>
-    <span class="separator">⟡</span>
-    <button onclick="window.location.href='https://peyruzdymrollap.vercel.app/'">Faucet</button>
-    <span class="separator">⟡</span>
-</div>
+        .button-container button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-<div style="display: flex; justify-content: center;">
-<iframe
-    src="https://embed.ipfscdn.io/ipfs/bafybeigdie2yyiazou7grjowoevmuip6akk33nqb55vrpezqdwfssrxyfy/erc1155.html?contract=0xcE46eeacf71629B4c1Dc30c5AfdD097427dA2821&chain=%7B%22name%22%3A%22peyruznode%22%2C%22chain%22%3A%22%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fevm.peyruznode.xyz%22%5D%2C%22nativeCurrency%22%3A%7B%22symbol%22%3A%22pyrz%22%2C%22name%22%3A%22pyr%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22peyruznode%22%2C%22chainId%22%3A3820966%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22peyruznode%22%2C%22icon%22%3A%7B%22url%22%3A%22%22%2C%22width%22%3A50%2C%22height%22%3A50%2C%22format%22%3A%22%22%7D%7D&clientId=953954bfef17b7415e8ad9d247c08bc9&tokenId=0&theme=light&primaryColor=purple"
-    width="600px"
-    height="600px"
-    style="max-width:100%;"
-    frameborder="0"
-></iframe>
+        .button-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .separator {
+            font-size: 24px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">PEYRUZNODE DYMENSION ROLLAPP</div>
+        <div class="button-container">
+            <button onclick="window.location.href='https://portal.dymension.xyz/rollapps'">Rollapp</button>
+            <span class="separator">⟡</span>
+            <button onclick="window.location.href='https://peyruzdymrollap.vercel.app/'">Faucet</button>
+        </div>
+
+        <iframe
+            src="https://embed.ipfscdn.io/ipfs/bafybeigdie2yyiazou7grjowoevmuip6akk33nqb55vrpezqdwfssrxyfy/erc1155.html?contract=0xcE46eeacf71629B4c1Dc30c5AfdD097427dA2821&chain=%7B%22name%22%3A%22peyruznode%22%2C%22chain%22%3A%22%22%2C%22rpc%22%3A%5B%22https%3A%2F%2Fevm.peyruznode.xyz%22%5D%2C%22nativeCurrency%22%3A%7B%22symbol%22%3A%22pyrz%22%2C%22name%22%3A%22pyr%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22peyruznode%22%2C%22chainId%22%3A3820966%2C%22testnet%22%3Atrue%2C%22slug%22%3A%22peyruznode%22%2C%22icon%22%3A%7B%22url%22%3A%22%22%2C%22width%22%3A50%2C%22height%22%3A50%2C%22format%22%3A%22%22%7D%7D&clientId=953954bfef17b7415e8ad9d247c08bc9&tokenId=0&theme=light&primaryColor=purple"
+            width="100%"
+            height="600px"
+            frameborder="0"
+        ></iframe>
+    </div>
+</body>
+</html>
